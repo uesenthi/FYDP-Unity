@@ -25,25 +25,25 @@ public class raycast_test : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Cast_Shot(cue_ball, ball);
-        foreach (GameObject solid_ball in balls)
-        {
-            Cast_Shot(cue_ball, solid_ball);
-        }
+//        foreach (GameObject solid_ball in balls)
+//        {
+//            Cast_Shot(cue_ball, solid_ball);
+//        }
 	}
 
     void Cast_Shot(GameObject cue_ball, GameObject ball)
     {
         //This if case is important when finding a collision between two balls, primarily the second check of the if statements
         //The second object will always have a collider, making the linecast return true. Therefore require second check to maek sure colliison isnt the original target
-        //if (Physics.Linecast(cue_ball.transform.position, ball.transform.position, out shootHit, ballMask) && shootHit.transform != ball.transform)
-        if (Physics.Linecast(cue_ball.transform.position, ball.transform.position, out shootHit, ballMask))
+        if (Physics.Linecast(cue_ball.transform.position, ball.transform.position, out shootHit, ballMask) && shootHit.transform != ball.transform)
+//        if (Physics.Linecast(cue_ball.transform.position, ball.transform.position, out shootHit, ballMask))
         {
-        //print("There's a child in the way! Look out!");
+        print("There's a child in the way! Look out!");
             Debug.DrawLine(cue_ball.transform.position, shootHit.point, Color.cyan);
         }
         else
         {
-            //print("Coast is clear!");
+            print("Coast is clear!");
         }
 
     }
