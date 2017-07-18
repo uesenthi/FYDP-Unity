@@ -15,7 +15,7 @@ public class raycast_test : MonoBehaviour {
     void Start() {
 
         ball = GameObject.FindGameObjectWithTag("Black");
-        balls = GameObject.FindGameObjectsWithTag("Solid");
+        //balls = GameObject.FindGameObjectsWithTag("Solid");
         cue_ball = GameObject.FindGameObjectWithTag("Cue");
         ballMask = LayerMask.GetMask("Ball");
 
@@ -24,6 +24,7 @@ public class raycast_test : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        balls = GameObject.FindGameObjectsWithTag("Solid");
         Cast_Shot(cue_ball, ball);
 //        foreach (GameObject solid_ball in balls)
 //        {
@@ -38,12 +39,20 @@ public class raycast_test : MonoBehaviour {
         if (Physics.Linecast(cue_ball.transform.position, ball.transform.position, out shootHit, ballMask) && shootHit.transform != ball.transform)
 //        if (Physics.Linecast(cue_ball.transform.position, ball.transform.position, out shootHit, ballMask))
         {
+<<<<<<< HEAD
         print("There's a child in the way! Look out!");
+=======
+            //print("There's a child in the way! Look out!");
+>>>>>>> 64721df5ecca36a3d1bcbbe206d2a5af7126a010
             Debug.DrawLine(cue_ball.transform.position, shootHit.point, Color.cyan);
         }
         else
         {
+<<<<<<< HEAD
             print("Coast is clear!");
+=======
+           // print("Coast is clear!");
+>>>>>>> 64721df5ecca36a3d1bcbbe206d2a5af7126a010
         }
 
     }
