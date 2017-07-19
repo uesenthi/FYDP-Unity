@@ -18,6 +18,7 @@ public class Createball : MonoBehaviour {
 		//not sure yet how the color detection will work, but it is needed to enter the right case
 		//other option is to send sorted array that already says index 0 is cue, 1 is black, 2 is red etc
 		//if ball doesnt exist populate that index with 0 so no ball is created
+		/*
 		for (int i = 0; i < opencv.arraylength; i++) {
 			
 			{
@@ -38,7 +39,7 @@ public class Createball : MonoBehaviour {
 				break;   
 			}
 		}
-
+		*/
 
 	}
 }
