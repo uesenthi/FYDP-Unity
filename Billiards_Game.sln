@@ -1,14 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billiards_Game", "Assembly-CSharp-firstpass.csproj", "{73C64BD1-77D2-D6C0-7B36-587468EFECED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billiards_Game", "Assembly-CSharp.csproj", "{A9991046-D4B3-FDBE-5BCA-F0A487DDADEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billiards_Game", "Assembly-CSharp-Editor-firstpass.csproj", "{35180C00-2D91-2C17-74D0-551B1F1E6BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{73C64BD1-77D2-D6C0-7B36-587468EFECED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C64BD1-77D2-D6C0-7B36-587468EFECED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C64BD1-77D2-D6C0-7B36-587468EFECED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C64BD1-77D2-D6C0-7B36-587468EFECED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9991046-D4B3-FDBE-5BCA-F0A487DDADEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9991046-D4B3-FDBE-5BCA-F0A487DDADEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9991046-D4B3-FDBE-5BCA-F0A487DDADEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9991046-D4B3-FDBE-5BCA-F0A487DDADEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35180C00-2D91-2C17-74D0-551B1F1E6BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35180C00-2D91-2C17-74D0-551B1F1E6BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35180C00-2D91-2C17-74D0-551B1F1E6BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35180C00-2D91-2C17-74D0-551B1F1E6BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
