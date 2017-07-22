@@ -13,29 +13,19 @@ public class Image_process_Script : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        //Uncomment this section when using the webcam
-        /* 
-        Process process = new Process();
-        process.StartInfo.FileName = "Image_Process_webcam.exe";
-        process.StartInfo.CreateNoWindow = true;
-        process.Start();
-        process.WaitForExit();
-        string[] circles = File.ReadAllLines("circles_coordinates_record.txt");
-        */
 
         //This section is for using a jpg file for object creation
         Process process = new Process();
-        process.StartInfo.FileName = "Image_Process_jpg.exe";
+        process.StartInfo.FileName = "Colour_Process_jpg.exe";
         process.StartInfo.CreateNoWindow = true;
-        process.StartInfo.Arguments = "scatter.jpg";
+        process.StartInfo.Arguments = "state.jpg";
         process.Start();
         process.WaitForExit();
-        string[] circles = File.ReadAllLines("circles_coordinates_jpg.txt");
+        string[] circles = File.ReadAllLines("colour_coordinates.txt");
 
-        char[] split = new char[3];
-        split[0] = '[';
-        split[1] = ']';
-        split[2] = ',';
+        char[] split = new char[2];
+        split[0] = '-';
+        split[1] = ',';
         foreach(string circle in circles)
         {
             coord = circle.Split(split);

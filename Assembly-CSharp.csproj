@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Pool Billiard Table\Scripts\Createball.cs" />
      <Compile Include="Assets\Pool Billiard Table\Scripts\Image_process_Script.cs" />
+     <Compile Include="Assets\Pool Billiard Table\Scripts\Process_Color.cs" />
      <Compile Include="Assets\Pool Billiard Table\Scripts\Remove.cs" />
      <Compile Include="Assets\Pool Billiard Table\Scripts\raycastForward.cs" />
      <Compile Include="Assets\Pool Billiard Table\Scripts\raycast_test.cs" />
